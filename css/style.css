@@ -1,0 +1,305 @@
+/******************************************************************************************************************************************
+	R E S E T
+******************************************************************************************************************************************/
+* { margin: 0; padding: 0;}
+html { overflow-y: scroll; overflow-x: hidden;}
+body { background:#ffffff; font-size: 13px;font-family: Arial, helvetica, sans-serif;background: rgb(192, 192, 192); color: rgb(102, 102, 102);}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111; font-family: "gravitybold_italic"}	
+a, img { outline: none; border:none;     color: rgb(77, 196, 252); font-weight: bold; text-decoration: none;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em; font-family: "gravitybook"}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { display: block;}
+
+/******************************************************************************************************************************************
+	F O N T S
+******************************************************************************************************************************************/
+@font-face {
+    font-family: 'gravitybold';
+    src: url('fonts/gravity-bold-webfont.eot');
+    src: url('fonts/gravity-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gravity-bold-webfont.woff2') format('woff2'),
+         url('fonts/gravity-bold-webfont.woff') format('woff'),
+         url('fonts/gravity-bold-webfont.ttf') format('truetype'),
+         url('fonts/gravity-bold-webfont.svg#gravitybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gravitybold_italic';
+    src: url('fonts/gravity-bolditalic-webfont.eot');
+    src: url('fonts/gravity-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gravity-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/gravity-bolditalic-webfont.woff') format('woff'),
+         url('fonts/gravity-bolditalic-webfont.ttf') format('truetype'),
+         url('fonts/gravity-bolditalic-webfont.svg#gravitybold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gravitybook';
+    src: url('fonts/gravity-book-webfont.eot');
+    src: url('fonts/gravity-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gravity-book-webfont.woff2') format('woff2'),
+         url('fonts/gravity-book-webfont.woff') format('woff'),
+         url('fonts/gravity-book-webfont.ttf') format('truetype'),
+         url('fonts/gravity-book-webfont.svg#gravitybook') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gravitybook_italic';
+    src: url('fonts/gravity-bookitalic-webfont.eot');
+    src: url('fonts/gravity-bookitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/gravity-bookitalic-webfont.woff2') format('woff2'),
+         url('fonts/gravity-bookitalic-webfont.woff') format('woff'),
+         url('fonts/gravity-bookitalic-webfont.ttf') format('truetype'),
+         url('fonts/gravity-bookitalic-webfont.svg#gravitybook_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************************************************************************
+	G E N E R A L
+******************************************************************************************************************************************/
+.wrapper {
+    width: 910px;
+    margin: 0px auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.article {
+    padding: 60px;
+}
+
+h2 {
+    font-size: 18pt;
+    font-family: gravitybold;
+    margin-bottom: 10px;
+}
+
+/******************************************************************************************************************************************
+	H E A D E R
+******************************************************************************************************************************************/
+.header-nav {
+    position: fixed;
+    width: 100%;
+    background: linear-gradient(rgba(96, 96, 96, .9), rgba(88, 88, 88, .9));
+    height: 125px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header-nav.shrink {
+	height: 75px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header-nav.shrink ul li a{
+	line-height: 50px;
+	font-size: 12pt;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.header-nav ul li a {
+    float: right;
+    margin: 20px;
+    font-family: 'gravitybold';
+}
+
+.header-nav ul li a {
+    color: rgb(255, 255, 255);
+    margin-right: 40px;
+    line-height: 150px;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: gravitybold;
+    transition: all 0.3s;
+}
+
+.header-nav ul li a:hover {
+	color: #4dc4fc;
+ 	text-shadow:0px 1px 0px #263666;
+}
+
+.nav-wrapper {
+    width: 910px;
+    margin: 0px auto;
+}
+
+.logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    transition: all 0.3s;
+}
+
+.logo.shrink {
+	height: 60px;
+	width: auto;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/******************************************************************************************************************************************
+	F O O T E R
+******************************************************************************************************************************************/
+footer {
+    background: linear-gradient(rgb(96, 96, 96), rgb(88, 88, 88));
+    height: 100px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+footer ul {
+    margin: 0px auto;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: gravitybold;
+}
+
+footer ul li {
+    float: left;
+    margin-left: 40px;
+}
+
+footer ul li a {
+    color: rgb(255, 255, 255);
+    margin-right: 40px;
+    line-height: 80px;
+    font-size: 16pt;
+    text-decoration: none;
+    font-family: gravitybold;
+}
+
+a.back-to-top {
+	display: none;
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	position: fixed;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: url("../images/back-to-top1.png") no-repeat center 43%;
+	background-size: 60px 60px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+}
+
+/******************************************************************************************************************************************
+	I N D E X
+******************************************************************************************************************************************/
+.index-img {
+    width: 100%;
+    min-height: 600px;
+    background-image: url('../images/index-img.jpg');
+}
+
+/******************************************************************************************************************************************
+	Q U E S T
+******************************************************************************************************************************************/
+.quest-img {
+	width: 100%;
+	min-height: 600px;
+	background-image: url('../images/quest-img.jpg');
+}
+
+
+/******************************************************************************************************************************************
+	T A B L E
+******************************************************************************************************************************************/
+table {
+	margin: 0px auto;
+}
+
+table, td, th {
+	padding: 10px 20px;
+}
+
+th {
+	text-align: left;
+	font-family: 'gravitybold';
+	font-weight: 700;
+	font-size: 12pt;
+}
+
+td {
+	font-family: 'gravitybook';
+}
+
+tr:hover {
+	font-family: 'gravitybold';
+	font-weight: 700;
+	color: #4dc4fc;
+}
+.qp {
+	text-align: center;
+}
+
+.table-header {
+	margin: 0px auto;
+	width: 15%;
+	padding: 10px 0;
+}
+
+.add-button {
+	padding: 10px 30px;
+	font-family: 'gravitybold';
+	background-color: rgb(77, 196, 252);
+	border:1px solid #0b0e07; color: #fff;
+	cursor: pointer; text-shadow:0px 1px 0px #263666;
+	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	-webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+	box-shadow:inset 0px -3px 7px 0px #29bbff; border-radius: 5px;
+}
+
+.add-button:hover {
+	background-color:rgb(102, 102, 102);
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+	background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+}
+
+.sum {
+	text-align: center;
+	font-family: 'gravitybold';
+	border-top: 1px solid #000;
+}
+
+.total {
+	font-family: 'gravitybold';
+	text-align: right;
+}
